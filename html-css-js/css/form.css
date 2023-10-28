@@ -23,8 +23,8 @@ html, body, * {
 #task-frontend {
   background-color: #021938;
   border-radius: 20px;
-	max-width: 850px;
-	text-align: center;
+  max-width: 850px;
+  text-align: center;
   margin: 0 auto;
   padding: 40px 70px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -107,7 +107,7 @@ html, body, * {
 /* submit button */
 
 #task-frontend input[type="submit"] {
-	background-color: #f6a822;
+  background-color: #f6a822;
   font-size: 1.2rem;
   color: black;
   border: 1px solid #f6a822;

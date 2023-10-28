@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>AKAI Frontend Task</title>
-	<link rel="stylesheet" type="text/css" href="css/form.css">
-	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-</head>
-<body>
+  <head>
+    <title>AKAI Frontend Task</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  </head>
+  <body>
     <div id="container">
-		<section id="task-frontend">
+      <section id="task-frontend">
 
-			<div id="logo-container">
-				<img src="./img/logo.svg" alt="logo">
-				<span class="basic-title">Formularz rekrutacyjny</span>
-			</div>
+        <div id="logo-container">
+          <img src="./img/logo.svg" alt="logo">
+          <span class="basic-title">Formularz rekrutacyjny</span>
+        </div>
 
-			<form method="POST" onsubmit="return validateForm()">
-				<div id="user-info">
-		    		<input type="text" id="first-name" placeholder="Imię">
-		    		<div id="fn-message" class="message"></div>
-					
-					<input type="text" id="last-name" placeholder="Nazwisko">
-		    		<div id="ln-message" class="message"></div>
-					
-					<input type="email" id="email" placeholder="E-mail">
-					<div id="email-message" class="message"></div>
-				</div>
+        <form method="POST" onsubmit="return validateForm()">
+          <div id="user-info">
+            <input type="text" id="first-name" placeholder="Imię">
+            <div id="fn-message" class="message"></div>
+            <input type="text" id="last-name" placeholder="Nazwisko">
+            <div id="ln-message" class="message"></div>
+            <input type="email" id="email" placeholder="E-mail">
+            <div id="email-message" class="message"></div>
+          </div>
 
-				<span>Sekcje, które Cię interesują:</span>
-            	<div id="sections">
-					<div>
-						<input type="checkbox" id="frontend-checkbox" name="section" value="frontend" >
-            			<label for="frontend-checkbox">Frontend</label>
-					</div>
-					<div>
-            			<input type="checkbox" id="backend-checkbox" name="section" value="backend" >
-            			<label for="backend-checkbox">Backend</label>
-					</div>
-			 		<div>
-						<input type="checkbox" id="mobile-checkbox" name="section" value="mobile" >
-           		 		<label for="mobile-checkbox">Mobile</label>
-					</div>
-					<div>
-						<input type="checkbox" id="graphics-checkbox" name="section" value="graphics" >
-            			<label for="graphics-checkbox">Grafika</label>
-					</div>
-				</div>
-				<div id="sections-message" class="message"></div>
+          <span>Sekcje, które Cię interesują:</span>
+          
+		  <div id="sections">
+            <div>
+              <input type="checkbox" id="frontend-checkbox" name="section" value="frontend" >
+              <label for="frontend-checkbox">Frontend</label>
+            </div>
+            <div>
+              <input type="checkbox" id="backend-checkbox" name="section" value="backend" >
+              <label for="backend-checkbox">Backend</label>
+            </div>
+            <div>
+              <input type="checkbox" id="mobile-checkbox" name="section" value="mobile" >
+              <label for="mobile-checkbox">Mobile</label>
+            </div>
+            <div>
+              <input type="checkbox" id="graphics-checkbox" name="section" value="graphics" >
+              <label for="graphics-checkbox">Grafika</label>
+            </div>
+          </div>
 
-            	<input type="submit" value="Prześlij">
-			</form>
-
-		</section>
-	</div>
-
-<script type="text/javascript" src="./js/validation.js"></script>
-
-</body>
+          <div id="sections-message" class="message"></div>
+          
+		  <input type="submit" value="Prześlij">
+        </form>
+      </section>
+    </div>
+    <script type="text/javascript" src="./js/validation.js"></script>
+  </body>
 </html>
