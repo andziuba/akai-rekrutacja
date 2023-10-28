@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html, body, * {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* container */
+
+#container {
+  background: linear-gradient(0deg, rgba(46, 61, 152, 1) 0%, rgba(2, 25, 56, 1) 100%);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#task-frontend {
+  background-color: #021938;
+  border-radius: 20px;
+	max-width: 850px;
+	text-align: center;
+  margin: 0 auto;
+  padding: 40px 70px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* logo-container */
+
+#logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#logo-container img {
+  width: 50px;
+  height: 50px;
+}
+
+.basic-title {
+  font-size: 1.3rem;
+}
+
+/* form */
+/* user-info*/
+
+#user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+#user-info input[type="text"], 
+#user-info input[type="email"] {
+  width: 250px;
+  height: 30px;
+  border: 3px solid #021938;
+  outline: none;
+  color: #000000;
+  padding: 4px 10px;
+  box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* sections */
+
+#sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
+  align-items: start;
+  margin: 10px 0;
+}
+
+#task-frontend input[type="checkbox"] {
+  border: none;
+  outline: none;
+  accent-color: #f6a822;
+}
+
+/* input-error */
+
+#user-info input:not(.input-error):focus,
+#user-info input:not(.input-error):focus {
+  border: 3px solid #f6a822;
+}
+
+#user-info input.input-error {
+  border: 3px solid #C73E1D;
+}
+
+.message {
+  min-height: 1rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #C73E1D;
+}
+
+/* submit button */
+
+#task-frontend input[type="submit"] {
+	background-color: #f6a822;
+  font-size: 1.2rem;
+  color: black;
+  border: 1px solid #f6a822;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 15px;
+  padding: 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+#task-frontend input[type="submit"]:hover {
+  background-color: #f8b94e;
+  border: 1px solid #f8b94e;
+  transform: translateY(2px);
+  box-shadow: none;
+}
